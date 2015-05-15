@@ -1,0 +1,56 @@
+{% if not success %}
+
+		<form role="form" data-request="onContactSend"
+		data-request-update="'{{__SELF__}}::form.htm':'#entry'" id="testimonium-form">
+			<div class="form-group {{ errors.author ? 'has-error'}} ">
+				<label for="author">{{ 'Naam'|_}}</label>
+				<input type="text" class="form-control" name="author" value="{{ post.author }}">
+			</div>
+			<div class="form-group {{ errors.mail ? 'has-error'}}">
+				<label for="mail">{{'E-mail adres'|_}}</label>
+				<input type="text" class="form-control" name="mail" value="{{ post.mail }}">
+			</div>
+			<div class="form-group {{ errors._message ? 'has-error'}}">
+				<label for="_message">{{'Bericht'|_}}</label>
+				<textarea type="text" class="form-control" name="_message" value="{{ post._message }}"></textarea>
+			</div>
+			<div class="row">
+				<div class="form-group col-sm-4 {{ errors.arrival ? 'has-error'}}">
+					<label for="departure">{{'Aankomst'|_}}</label>	
+					<div class="input-group date">
+					  	<input type="text" class="form-control" value="{{ post.departure }}" name="arrival"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+					</div>
+				</div>
+				<div class="form-group col-sm-4 {{ errors.departure ? 'has-error'}}">
+					<label for="departure">{{'Vertrek'|_}}</label>	
+					<div class="input-group date">
+					  	<input type="text" class="form-control" value="{{ post.departure }}" name="departure"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+					</div>
+				</div>
+				<div class="form-group col-sm-4 {{ errors.mark ? 'has-error'}}">
+				<label for="mark">{{'Cijfer'|_}}</label>
+				<select class="form-control" name="mark">
+				  <option {% if not post.mark %}selected{%endif%} disabled>1-10</option>
+				  <option value="1" {% if post.mark == 1%}selected{%endif%}>1</option>
+				  <option value="2" {% if post.mark == 2%}selected{%endif%}>2</option>
+				  <option value="3" {% if post.mark == 3%}selected{%endif%}>3</option>
+				  <option value="4" {% if post.mark == 4%}selected{%endif%}>4</option>
+				  <option value="5" {% if post.mark == 5%}selected{%endif%}>5</option>
+				  <option value="6" {% if post.mark == 6%}selected{%endif%}>6</option>
+				  <option value="7" {% if post.mark == 7%}selected{%endif%}>7</option>
+				  <option value="8" {% if post.mark == 8%}selected{%endif%}>8</option>
+				  <option value="9" {% if post.mark == 9%}selected{%endif%}>9</option>
+				  <option value="10" {% if post.mark == 10%}selected{%endif%}>10</option>
+				</select>
+				<!-- <input type="text" class="form-control"  value="{{ post.mark }}"> -->
+			</div>
+			</div>
+			
+
+			<button type="submit" class="btn btn-success">{{'Versturen'|_}}</button>
+		</form>
+		{% else %}
+		<div id="sent">
+			<span>{{'Bedankt voor uw bericht! Voor de zekerheid controleren wij handmatig nog even of u geen spam heeft ingevuld.'|_}}</span>
+		</div>
+		{% endif %}

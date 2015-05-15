@@ -1,0 +1,11 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    description:
+        label: cptmeatball.pricetables::lang.table.price.description
+        type: text
+    price:
+        label: cptmeatball.pricetables::lang.table.price.price
+        type: text

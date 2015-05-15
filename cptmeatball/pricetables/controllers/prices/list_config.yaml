@@ -1,0 +1,17 @@
+list: ~/plugins/cptmeatball/pricetables/models/pricetable/columns.yaml
+
+modelClass: Cptmeatball\Pricetables\Models\PriceTable
+
+title: Pricetables
+
+defaultSort:
+    column: updated_at
+    direction: desc
+
+recordUrl: cptmeatball/pricetables/prices/update/:id
+noRecordsMessage: cptmeatball.pricetables::lang..no_records
+
+showCheckboxes: true
+
+toolbar:
+    buttons: toolbar

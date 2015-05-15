@@ -1,0 +1,20 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: Categories
+form: ~/plugins/cptmeatball/pricetables/models/category/fields.yaml
+modelClass: Cptmeatball\Pricetables\Models\Category
+defaultRedirect: Cptmeatball\Pricetables\Categories
+
+create:
+    title: Create New Category
+    redirect: cptmeatball/pricetables/categories/update/:id
+    redirectClose: cptmeatball/pricetables/categories
+    flashSave: cptmeatball.pricetables::lang.message.category.create
+
+update:
+    title: Edit Category
+    redirect: cptmeatball/pricetables/categories
+    redirectClose: cptmeatball/pricetables/categories
+    flashSave: cptmeatball.pricetables::lang.message.category.update

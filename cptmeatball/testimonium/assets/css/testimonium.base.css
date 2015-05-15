@@ -1,0 +1,56 @@
+.testimonial-holder {
+	padding: 15px 30px !important;
+}
+
+.testimonial {
+	background-color: #f7f7f7;
+	color: #333;
+}
+
+.testimonial h4 {
+	line-height: 24px;
+}
+
+.testimonial .score {
+	text-align: center;
+	font-size: 1em;
+	color: green;
+	height: 80px;
+	padding: 10px 10px 10px 20px;
+}
+
+.testimonial .score.bad {
+	color: #8B1820  ;
+}
+
+.testimonial .score.warning {
+	color: #ff6600;
+}
+.testimonial .score h2 {
+	margin: 0;
+	padding: 0;
+	margin-top: 15px;
+}
+
+.testimonial .author {
+	height: 80px;
+	padding: 35px 15px 10px 0;
+}
+
+.testimonial hr {
+	margin: 0;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.testimonial .message {
+	padding: 10px;
+}
+
+.testimonial .message hr {
+	padding-bottom: 10px;
+}
+
+.testimonial .message span{
+	color: #e0e0e0;
+}

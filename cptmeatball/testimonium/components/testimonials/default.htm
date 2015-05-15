@@ -1,0 +1,32 @@
+{% if testimonials.0 %}
+<div id="masonry">
+	{% for testimonial in testimonials %}
+		<div class="col-sm-12 testimonial-holder">
+			<div class="row testimonial">
+			<div class="row">
+				<div class="col-xs-2 score {% if testimonial.mark < 5%}bad{%elseif testimonial.mark < 7%}warning{%endif%}">
+					<h2>{{testimonial.mark}}</h2>
+				</div>
+				<div class="col-xs-10 author">
+					<div class="_table">
+						<div class="table-cell">
+							<p>{{ testimonial.author }}</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+				<div class="message">
+				<hr>
+					<p>{{ testimonial.message }}</p>
+					
+					<p>{{ testimonial.arrival|date('d F Y') }} {{ 't/m'|_}} {{testimonial.departure |date('d F Y')}}</p>
+				</div>
+			</div>	
+		</div>
+	{% endfor %}
+</div>
+{% else %}
+	<span>{{'Er zijn nog geen reacties in het gastenboek.'|_}}</span>
+{% endif %}

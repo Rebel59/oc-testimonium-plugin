@@ -1,0 +1,10 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+prices:
+    label: Price Item
+    list: @/plugins/cptmeatball/pricetables/models/price/columns.yaml
+    form: @/plugins/cptmeatball/pricetables/models/price/fields.yaml
+    view:
+        toolbarButtons: create|delete

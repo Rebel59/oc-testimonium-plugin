@@ -1,0 +1,12 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    author:
+        label: Naam
+        searchable: true
+    mark:
+        label: Cijfer
+    approved:
+        label: Goedgekeurd

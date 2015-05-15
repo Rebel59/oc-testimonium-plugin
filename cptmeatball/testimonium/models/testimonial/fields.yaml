@@ -1,0 +1,38 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        hidden: true
+    author:
+        label: Naam
+        required: true
+    message:
+        label: Bericht
+        type: textarea
+        required: true
+    arrival:
+        label: Aankomst
+        type: datepicker
+        mode: date
+        size: small
+        required: true
+        span: left
+    departure:
+        label: Vertrek
+        type: datepicker
+        mode: date
+        size: small
+        required: true
+        span: right
+    mark:
+        label: Cijfer
+        size: tiny
+        required: true
+        span: left
+    approved:
+        label: Goedgekeurd
+        type: switch
+        size: tiny
+        span: right

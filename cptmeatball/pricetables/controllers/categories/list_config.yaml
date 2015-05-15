@@ -1,0 +1,16 @@
+list: ~/plugins/cptmeatball/pricetables/models/category/columns.yaml
+
+modelClass: Cptmeatball\Pricetables\Models\Category
+
+title: Categories
+
+defaultSort:
+    column: updated_at
+    direction: desc
+
+recordUrl: cptmeatball/pricetables/categories/update/:id
+
+showCheckboxes: true
+
+toolbar:
+    buttons: toolbar

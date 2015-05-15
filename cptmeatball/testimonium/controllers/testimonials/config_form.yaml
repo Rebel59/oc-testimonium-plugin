@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Testimonial
+
+# Model Form Field configuration
+form: $/cptmeatball/testimonium/models/testimonial/fields.yaml
+
+# Model Class name
+modelClass: Cptmeatball\Testimonium\Models\Testimonial
+
+# Default redirect location
+defaultRedirect: cptmeatball/testimonium/testimonials
+
+# Create page
+create:
+    title: Create Testimonial
+    redirect: cptmeatball/testimonium/testimonials/update/:id
+    redirectClose: cptmeatball/testimonium/testimonials
+
+# Update page
+update:
+    title: Edit Testimonial
+    redirect: cptmeatball/testimonium/testimonials
+    redirectClose: cptmeatball/testimonium/testimonials
+
+# Preview page
+preview:
+    title: Preview Testimonial
