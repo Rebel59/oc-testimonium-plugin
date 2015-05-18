@@ -1,4 +1,4 @@
-    This app is still under development! 
+    This plugin is still under development! 
 
 # Testimonium
 It's a guestbook! It's a restaurant rating! It's Testimonium! It's a fully featured, fully customizable OctoberCMS plugin that let's your visitors and clients leave awesome (or not so awesome :O) messages about your services. Oh. AND IT'S FULLY FREE!
