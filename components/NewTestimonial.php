@@ -47,7 +47,7 @@ class NewTestimonial extends ComponentBase
                 $errors[$error] = "1";
             }
             //print_r($validator->messages());
-            $this->page['errors'] = $errors;
+            $this->page['validation'] = $errors;
             //$this->page['success']
             $this->page['post'] = post();
         }else{
@@ -64,7 +64,7 @@ class NewTestimonial extends ComponentBase
                 $post['id'] = $testimonial->id;
                 Mail::send('cptmeatball.testimonium::mail.message', $post, function($message)
                 {
-                    $message->to('office@hausholunder.at', "Gastenboek Haus Holunder");
+                    $message->to('testimonium@mailinator.com', "Testimonium");
                 });
 
                 $this->page['success'] = "1";
